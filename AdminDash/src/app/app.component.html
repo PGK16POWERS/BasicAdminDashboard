@@ -1,5 +1,28 @@
 <section id="main-frame">
-  <header></header>
-  <aside></aside>
-  <router-outlet></router-outlet>
+
+  <header>
+    <div class="logo"></div>
+    <div class="user-icon"></div>
+  </header>
+
+  <aside>
+    <span class="aside-header">
+      DASHBOARD MENU
+    </span>
+
+  </aside>
+
+  <section id="outlet-section">
+
+    <span class="outlet-header">
+      DASHBOARD
+    </span>
+
+    <div class="outlet-parent">
+      <router-outlet></router-outlet>
+    </div>
+    
+  </section>
+  
+
 </section>
