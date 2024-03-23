@@ -40,6 +40,7 @@ aside {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    overflow-y: scroll;
 }
 
 .aside-header {
@@ -48,6 +49,13 @@ aside {
     letter-spacing: 1px;
     font-family: var(--nuns);
     color: #dddddd;
+}
+
+.aside-nav-link {
+    font-size: 1em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    color: #909090;
 }
 
 /* ASIDE STYLES */
