@@ -13,13 +13,25 @@ export class AppComponent implements OnInit {
       const block = document.querySelectorAll(".block") as NodeListOf<HTMLElement>;
 
       block.forEach(block => {
-        const blockHeader = document.querySelector(".block-header") as HTMLElement;
-        const linkList = document.querySelector(".linkList") as HTMLElement;
+        const blockHeader = block.querySelector(".block-header") as HTMLElement;
+        const linkList = block.querySelector(".linkList") as HTMLElement;
 
-          blockHeader.addEventListener("click", () => {
-            const linkList = document.querySelector(".linkList") as HTMLElement;
-            linkList.classList.toggle("open-close");
-          })
+        var listOpen = false;
+
+        blockHeader.addEventListener("click", () => {
+          linkList.style.display = "flex";
+          listOpen = true;
+
+          if (linkList.style.display = "flex") {
+            blockHeader.addEventListener("click", () => {
+              linkList.style.display = "none";
+              listOpen = true;
+            });
+          }
+        });
+
       })
+
+      
   }
 }
